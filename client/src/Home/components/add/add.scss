@@ -1,0 +1,77 @@
+.Add-container {
+  background: rgba(0, 0, 0, 0.625);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  .modal {
+    border: solid white 2px;
+    padding: 100px;
+    background: white;
+    position: relative;
+
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .label-text-image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 14px;
+
+        label {
+          cursor: pointer;
+        }
+      }
+
+      .hide {
+        display: none;
+      }
+
+      span {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+      }
+      .button {
+        width: 250px;
+      }
+
+      h1 {
+        font-size: 3vw;
+        position: absolute;
+        top: 0;
+      }
+
+      input,
+      select {
+        outline: none;
+        border-bottom: black 1px solid;
+        padding: 5px;
+        width: 250px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .status-container {
+        display: flex;
+        input {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

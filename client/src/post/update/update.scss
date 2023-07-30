@@ -1,0 +1,70 @@
+.update-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.625);
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+  .item-container {
+    background: white;
+    position: relative;
+
+    .close-icon {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+
+    .title {
+      position: absolute;
+      left: 3rem;
+      top: 2rem;
+      font-size: 2vw;
+      font-weight: 500;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px;
+
+      .image-div {
+        display: flex;
+        margin-bottom: 14px;
+        font-size: 20px;
+        font-weight: 400;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+
+        label {
+          cursor: pointer;
+        }
+      }
+
+      input,
+      select {
+        width: 250px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        outline: none;
+        border: 1px solid black;
+        margin-bottom: 20px;
+
+        &.hide {
+          display: none;
+        }
+      }
+    }
+  }
+}

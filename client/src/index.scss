@@ -1,0 +1,12 @@
+body {
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 5vw;
+  text-transform: capitalize;
+}

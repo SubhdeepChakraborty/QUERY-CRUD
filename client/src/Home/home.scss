@@ -1,0 +1,95 @@
+.home {
+  .Close {
+    cursor: pointer;
+  }
+  .Add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    button {
+      padding: 10px;
+      background: transparent;
+      border: 1px gray solid;
+      color: rgba(0, 0, 0, 0.816);
+      font-weight: bold;
+      font-size: 17px;
+      border-radius: 0.25rem;
+      outline: none;
+    }
+  }
+
+  .title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title-loading {
+      font-size: 6vw;
+    }
+  }
+
+  .button-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+
+    @media screen and (max-width: 1292px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 924px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box {
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      -webkit-box-shadow: 1px 2px 8px 3px rgba(0, 0, 0, 1);
+      -moz-box-shadow: 1px 2px 8px 3px rgba(0, 0, 0, 1);
+      box-shadow: 1px 2px 8px 3px rgba(0, 0, 0, 1);
+
+      .item-1 {
+        overflow: hidden;
+
+        img {
+          width: 140px;
+          height: 140px;
+          object-fit: cover;
+          transition: transform 0.3s ease; /* Add a smooth transition for zoom effect */
+
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+
+      .item {
+        gap: 10px;
+
+        .name {
+          font-size: 3vw;
+        }
+        .email,
+        .gender {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

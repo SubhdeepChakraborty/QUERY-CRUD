@@ -1,0 +1,87 @@
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    border: black solid 1px;
+    padding: 50px;
+    border-radius: 0.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .div-id {
+      font-size: 3vw;
+      font-weight: 500;
+      position: absolute;
+      top: 0;
+    }
+
+    .div-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      position: relative;
+
+      .back-icon {
+        position: absolute;
+        top: -30px;
+        left: 1rem;
+      }
+
+      .container-1 {
+        overflow: hidden;
+        img {
+          width: 140px;
+          height: 140px;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+
+          @media screen and (max-width: 414px) {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+
+    .id {
+      font-size: 4vw;
+    }
+
+    .title,
+    .email {
+      font-size: 3vw;
+      font-weight: 400;
+    }
+
+    .Update-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      button {
+        padding: 10px;
+        background: transparent;
+        border: 1px gray solid;
+        color: rgba(0, 0, 0, 0.816);
+        font-weight: bold;
+        font-size: 17px;
+        border-radius: 0.25rem;
+        outline: none;
+      }
+    }
+  }
+}
